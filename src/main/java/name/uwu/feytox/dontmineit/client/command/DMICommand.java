@@ -2,25 +2,23 @@ package name.uwu.feytox.dontmineit.client.command;
 
 import com.mojang.brigadier.context.CommandContext;
 import name.uwu.feytox.dontmineit.client.config.ModConfig;
-import net.fabricmc.fabric.api.client.command.v1.ClientCommandManager;
+import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.resource.language.I18n;
 import net.minecraft.command.argument.BlockStateArgumentType;
-import net.minecraft.text.LiteralText;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 
 import java.util.List;
 
-import static net.fabricmc.fabric.api.client.command.v1.ClientCommandManager.argument;
-import static net.fabricmc.fabric.api.client.command.v1.ClientCommandManager.literal;
+import static net.fabricmc.fabric.api.client.command.v2.ClientCommandManager.argument;
+import static net.fabricmc.fabric.api.client.command.v2.ClientCommandManager.literal;
 
 public class DMICommand {
     public static void init() {
-        ClientCommandManager.DISPATCHER.register(literal("dmi")
+        ClientCommandRegistrationCallback.EVENT.register((dispatcher, registryAccess) -> dispatcher.register(literal("dmi")
                 .then(literal("addBlock")
                         .then(argument("list", DMIListArgumentType.blocklists())
-                                .then(argument("block", BlockStateArgumentType.blockState())
+                                .then(argument("block", BlockStateArgumentType.blockState(registryAccess))
                                         .executes(context -> {
                                             String listName = parseInput(context, 2);
                                             String blockName = parseInput(context, 3);
@@ -129,7 +127,7 @@ public class DMICommand {
                                     }
 
                                     return 1;
-                                }))));
+                                })))));
     }
 
     public static <S> String parseLast(CommandContext<S> context) {
@@ -143,11 +141,11 @@ public class DMICommand {
     }
 
     private static void sendFormattedText(String key, Object formatObj) {
-        sendMessage(new LiteralText(I18n.translate(key, formatObj)));
+        sendMessage(Text.literal(I18n.translate(key, formatObj)));
     }
 
     private static void sendTranslatableText(String key) {
-        sendMessage(new TranslatableText(key));
+        sendMessage(Text.translatable(key));
     }
 
     private static void sendMessage(Text message) {
