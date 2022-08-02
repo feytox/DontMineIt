@@ -1,0 +1,22 @@
+{
+  "dontmineit.addblock.nongroup": "Invalid block",
+  "dontmineit.addblock.success": "Block added to the list!",
+  "dontmineit.addblock.fail": "Block is already added",
+  "dontmineit.delblock.success": "Block removed from the list!",
+  "dontmineit.delblock.fail": "Block is not in the list",
+  "dontmineit.list.all": "Fully blocked blocks: %s",
+  "dontmineit.list.onlySilkTouch": "Silk Touch only: %s ",
+  "dontmineit.list.onlyFortune": "Fortune only: %s",
+
+  "text.autoconfig.dontmineit.title": "§lDon't Mine It",
+  "text.autoconfig.dontmineit.option.toggleMod.@PrefixText": "§nBasic settings",
+  "text.autoconfig.dontmineit.option.toggleMod": "Enable mod",
+  "text.autoconfig.dontmineit.option.enableParticles": "Enable particles",
+  "text.autoconfig.dontmineit.option.toggleAll": "Enable §n1st§r list",
+  "text.autoconfig.dontmineit.option.toggleOnlySilk": "Enable §n2nd§r list",
+  "text.autoconfig.dontmineit.option.toggleOnlyFortune": "Enable §n3d§r list",
+  "text.autoconfig.dontmineit.option.allBlockList.@PrefixText": "§nBlocked blocks lists",
+  "text.autoconfig.dontmineit.option.allBlockList": "Fully blocked blocks",
+  "text.autoconfig.dontmineit.option.onlySilkList": "Can break with Silk Touch only",
+  "text.autoconfig.dontmineit.option.onlyFortuneList": "Can break with Fortune only"
+}

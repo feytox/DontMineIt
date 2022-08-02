@@ -1,0 +1,23 @@
+{
+  "dontmineit.addblock.nongroup": "Такого списка не существует",
+  "dontmineit.addblock.success": "Блок добавлен в список!",
+  "dontmineit.addblock.fail": "Блок уже есть в данном списке",
+  "dontmineit.delblock.success": "Блок удалён из списка!",
+  "dontmineit.delblock.fail": "Блок отсутствует в данном списке",
+  "dontmineit.list.all": "Полностью заблокированные блоки: %s",
+  "dontmineit.list.onlySilkTouch": "Только шёлковое касание: %s",
+  "dontmineit.list.onlyFortune": "Только удача: %s",
+
+  "text.autoconfig.dontmineit.title": "§lDon't Mine It",
+  "text.autoconfig.dontmineit.option.toggleMod.@PrefixText": "§nОсновные настройки",
+  "text.autoconfig.dontmineit.option.toggleMod": "Включить мод",
+  "text.autoconfig.dontmineit.option.enableParticles": "Включить частицы",
+  "text.autoconfig.dontmineit.option.toggleAll": "Включить §nпервый§r список",
+  "text.autoconfig.dontmineit.option.toggleOnlySilk": "Включить §nвторой§r список",
+  "text.autoconfig.dontmineit.option.toggleOnlyFortune": "Включить §nтретий§r список",
+  "text.autoconfig.dontmineit.option.allBlockList.@PrefixText": "§nСписки заблокированных блоков",
+  "text.autoconfig.dontmineit.option.allBlockList": "Полностью заблокированные блоки",
+  "text.autoconfig.dontmineit.option.onlySilkList": "Можно сломать только шёлковым касанием",
+  "text.autoconfig.dontmineit.option.onlyFortuneList": "Можно сломать только удачей"
+
+}
