@@ -18,10 +18,10 @@
   "environment": "client",
   "entrypoints": {
     "client": [
-      "name.uwu.feytox.dontmineit.client.DontMineItClient"
+      "ru.feytox.dontmineit.client.DontMineItClient"
     ],
     "modmenu": [
-      "name.uwu.feytox.dontmineit.client.config.ModMenuIntegration"
+      "ru.feytox.dontmineit.client.config.ModMenuIntegration"
     ]
   },
   "mixins": [
@@ -29,6 +29,6 @@
   ],
   "depends": {
     "fabric": "*",
-    "minecraft": "1.19.x"
+    "minecraft": "1.19.4"
   }
 }

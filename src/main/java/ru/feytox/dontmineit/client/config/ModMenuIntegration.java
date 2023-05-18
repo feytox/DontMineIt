@@ -1,4 +1,4 @@
-package name.uwu.feytox.dontmineit.client.config;
+package ru.feytox.dontmineit.client.config;
 
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;

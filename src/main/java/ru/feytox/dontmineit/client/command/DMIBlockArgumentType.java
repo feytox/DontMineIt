@@ -1,14 +1,14 @@
-package name.uwu.feytox.dontmineit.client.command;
+package ru.feytox.dontmineit.client.command;
 
 import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.suggestion.Suggestions;
 import com.mojang.brigadier.suggestion.SuggestionsBuilder;
-import name.uwu.feytox.dontmineit.client.config.ModConfig;
+import ru.feytox.dontmineit.client.config.ModConfig;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
-import static name.uwu.feytox.dontmineit.client.command.DMICommand.parseInput;
+import static ru.feytox.dontmineit.client.command.DMICommand.parseInput;
 
 public class DMIBlockArgumentType implements IFeyArgumentType {
     int listNameArgIndex;

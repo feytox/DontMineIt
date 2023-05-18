@@ -1,4 +1,4 @@
-package name.uwu.feytox.dontmineit.client.command;
+package ru.feytox.dontmineit.client.command;
 
 import com.mojang.brigadier.StringReader;
 import com.mojang.brigadier.arguments.ArgumentType;

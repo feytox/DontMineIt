@@ -1,22 +1,18 @@
-package name.uwu.feytox.dontmineit.client.mixin;
+package ru.feytox.dontmineit.client.mixin;
 
-import name.uwu.feytox.dontmineit.client.DontMineItClient;
-import name.uwu.feytox.dontmineit.client.config.ModConfig;
 import net.minecraft.block.BlockState;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.ClientPlayerInteractionManager;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
-import net.minecraft.world.GameMode;
-import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+import ru.feytox.dontmineit.client.config.ModConfig;
 
-import static name.uwu.feytox.dontmineit.client.DontMineItClient.checkBlockInList;
+import static ru.feytox.dontmineit.client.DontMineItClient.checkBlockInList;
 
 @Mixin(ClientPlayerInteractionManager.class)
 public class CPIManagerMixin {

@@ -1,6 +1,5 @@
-package name.uwu.feytox.dontmineit.client.config;
+package ru.feytox.dontmineit.client.config;
 
-import com.mojang.brigadier.suggestion.Suggestions;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.ConfigData;
 import me.shedaniel.autoconfig.annotation.Config;

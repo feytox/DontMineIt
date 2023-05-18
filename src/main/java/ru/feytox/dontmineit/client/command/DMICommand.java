@@ -1,12 +1,12 @@
-package name.uwu.feytox.dontmineit.client.command;
+package ru.feytox.dontmineit.client.command;
 
 import com.mojang.brigadier.context.CommandContext;
-import name.uwu.feytox.dontmineit.client.config.ModConfig;
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.resource.language.I18n;
 import net.minecraft.command.argument.BlockStateArgumentType;
 import net.minecraft.text.Text;
+import ru.feytox.dontmineit.client.config.ModConfig;
 
 import java.util.List;
 

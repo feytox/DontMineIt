@@ -1,4 +1,4 @@
-package name.uwu.feytox.dontmineit.client.mixin;
+package ru.feytox.dontmineit.client.mixin;
 
 import net.minecraft.client.network.ClientPlayerInteractionManager;
 import net.minecraft.world.GameMode;
