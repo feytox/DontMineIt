@@ -11,7 +11,6 @@ repositories {
     maven {
         url = "https://maven.terraformersmc.com/releases/"
     }
-    maven { url 'https://jitpack.io' }
     maven { url = "https://api.modrinth.com/maven" }
 }
 
@@ -26,8 +25,6 @@ dependencies {
         exclude(group: "net.fabricmc.fabric-api")
     }
     modImplementation "com.terraformersmc:modmenu:${project.modmenu_version}"
-
-    modImplementation "com.github.feytox:OptiDevium:${project.minecraft_version}-SNAPSHOT"
 }
 
 processResources {
