@@ -34,10 +34,10 @@ jobs:
       - name: publish to Modrinth and CurseForge
         uses: Kir-Antipov/mc-publish@v3.3
         with:
-          modrinth-id: yBpsDi4j
+          modrinth-id: ZxpgqLkR
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
 
-          curseforge-id: 663213
+          curseforge-id: 662188
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
 
           name: "[1.21.1] Don't Mine It 1.0.0"
